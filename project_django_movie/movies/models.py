@@ -56,6 +56,7 @@ class Ganre(models.Model):
 class Movie(models.Model):
     """Фильмы"""
 
+    objects = None
     title = models.CharField("Название", max_length=150)
     tagline = models.CharField("Слоган", max_length=100, default="")
     description = models.TextField("Описание")
